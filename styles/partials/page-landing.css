@@ -76,19 +76,19 @@
     }
 
     .total-connections {
-        font-size:1.6rem;
+        font-size:1.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .total-connections img {
-      margin-left: .8rem
+      margin-left: 0.8rem;
     }
 
-    @media(max-widht: 699px) {       
+    @media(max-width: 699px) {       
     :root {
-        font-size: 60%;
+        font-size: 40%;
     }
     }
 
