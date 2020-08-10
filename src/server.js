@@ -16,7 +16,7 @@ const proffys = [
     cost: "20", 
     weekday: [2],
     time_from: [720],
-    time_to: [1220] }
+    time_to: [1220] },
 ]
 
 function pageLanding(req, res) {
@@ -24,7 +24,7 @@ function pageLanding(req, res) {
 }
 
 function pageStudy(req, res) {
-    return res.render("study.html");
+    return res.render("study.html", { proffys });
 }
 
 function pageGiveClasses(req, res) {
