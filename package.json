@@ -1,0 +1,27 @@
+{
+  "name": "NLW2",
+  "version": "1.0.0",
+  "description": "Repositório contendo a solução criada durante o Next Level Week 2, com melhorias que achei conveniente implemementadas!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasvpontes/NLW2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasvpontes/NLW2/issues"
+  },
+  "homepage": "https://github.com/lucasvpontes/NLW2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
