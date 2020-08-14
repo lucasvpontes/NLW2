@@ -11,7 +11,7 @@ database.then( async (db) => {
 }
 
     classValue = {
-        subject: "Química", 
+        subject: 1, 
         cost: "20", 
 
     }
@@ -40,6 +40,18 @@ database.then( async (db) => {
     JOIN classes ON (proffys.id = classes.proffy_id)
     WHERE classes.proffy_id = 1;
     `);
-    console.log(selectClassesAndProffys);
+
+
+    const selectClassesSchedule = await db.all(`
+    SELECT class_schedule.*
+    FROM class_schedule
+    WHERE class_schedule.class_id = "2"
+    AND class_schedule.weekday = "4"
+    AND class_schedule.time_from <= 590
+    AND class_schedule.time_to > 590;
+    `);
+
+    console.log(selectClassesSchedule);
+
 });
 

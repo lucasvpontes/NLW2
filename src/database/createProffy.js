@@ -30,7 +30,11 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
 
     const classId = insertedClasses.lastID;
 
+    console.log(proffyValue);
+    console.log(classValue);
+    console.log(classScheduleValues);
     const insertedAllClassScheduleValues = classScheduleValues.map((classScheduleValue) => {
+    
     return db.run(`
         INSERT INTO class_schedule(
             class_id,
